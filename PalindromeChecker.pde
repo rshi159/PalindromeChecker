@@ -25,8 +25,6 @@ public boolean palindrome(String word)
       myString+=word.substring(i,i+1);
     }
   }
-  System.out.println(myString.toLowerCase());
-  System.out.println(reverse(myString).toLowerCase());
     if(myString.toLowerCase().equals(reverse(myString).toLowerCase()))
       return true;
   else
