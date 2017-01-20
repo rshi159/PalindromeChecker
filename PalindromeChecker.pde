@@ -25,11 +25,10 @@ public boolean palindrome(String word)
       myString+=word.substring(i,i+1);
     }
   }
-  for(int j = 0;j<myString.length();j++)
-  {
-  }
-  if(num == myString.length()-1)
-    return true;
+  System.out.println(myString.toLowerCase());
+  System.out.println(reverse(myString).toLowerCase());
+    if(myString.toLowerCase().equals(reverse(myString).toLowerCase()))
+      return true;
   else
     return false;
 }
@@ -40,5 +39,5 @@ public String reverse(String str)
     {
       sNew=sNew+str.substring(i,i+1);
     }
-    return sNew;
+    return sNew.toLowerCase();
 }
